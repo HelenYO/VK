@@ -8,23 +8,22 @@
 #include <vector>
 #include <iostream>
 
-typedef unsigned long long ull;
 
-ull too_mall_size = 100;
-ull small_size = 1000;
+int too_mall_size = 100;
+int small_size = 1000;
 
 
 
 class Searcher {
-std::vector<ull> a;
-std::vector<ull> b;
+std::vector<int> a;
+std::vector<int> b;
 public:
-    Searcher(const std::vector<ull> &a, const std::vector<ull> &b);
-    ull find();
+    Searcher(const std::vector<int> &a, const std::vector<int> &b);
+    unsigned long find();
 private:
-    ull find_sort();
-    ull find_different_sizes();
-    ull find_small_sizes();
+    unsigned long find_sort();
+    unsigned long find_different_sizes();
+    unsigned long find_small_sizes();
 };
 
 
